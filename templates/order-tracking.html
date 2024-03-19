@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Order tracking</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../static/css/order-tracking.css" />
+		<link rel="stylesheet" href="../static/css/navbar.css" />
+		<link rel="stylesheet" href="../static/css/footer.css" />
+	</head>
+	<body style="background-color: beige">
+		<nav
+		style="
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 110px;
+			padding: 0 20px;
+			background-color: black;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		"
+	>
+	<div class="logo">
+		<a href="/" style="text-decoration: none" onclick="playLogoAnimation(event)">
+			<img src="../static/assets/logo.png" alt="Logo" />
+		</a>
+	</div>
+		<div class="site-name">YOUR ORDERS</div>
+		<div class="cart-navbar">
+			<a href="cart" style="text-decoration: none">
+				<img
+					src="../static/assets/cart.svg"
+					alt="Cart"
+					style="z-index: 700; padding-right: 30px;;"
+				/>
+			</a>
+		</div>
+		<div class="profile">
+			<img src="../static/assets/user.jpg" class="user-img" alt="Profile" style=" transform: translateY(-20px)" />
+			<div class="profile-info">
+				<p style="font-size: 24px; font-weight: 600">{{user['name']}}</p>
+				<p style="font-size: 20px; font-weight: 400">{{user['phone']}}</p>
+				<hr width="300px" />
+	
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="viewOrders"
+						>View Orders</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="yourDeliveries"
+						>View Deliveries</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="logout"
+						>Logout</a
+					>
+				</p>
+			</div>
+		</div>
+	</nav>
+	
+		<div style="display: flex; flex-direction: row; margin-top: 150px">
+			<div class="left-div">
+				<div>
+					{% for order in orders %}
+					<div
+						class="delivery-item"
+						order="{{order['order_id']}}"
+						onclick="viewOrder('{{order['order_id']}}')"
+					>
+						<p
+							id="order_id"
+							style="
+								font-size: 30px;
+								font-weight: 600;
+								line-height: 10px;
+							"
+							class="list-of-orders-ids"
+						>
+							Order ID: {{order['order_id']}}
+						</p>
+						<p
+							style="
+								font-size: 24px;
+								font-weight: 400;
+								line-height: 10px;
+							"
+						>
+							{{order['canteen_name']}}
+						</p>
+						<p
+							style="
+								font-size: 24px;
+								font-weight: 400;
+								line-height: 10px;
+							"
+						>
+							Amount: ₹ {{order['amount']}}
+						</p>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+
+			<div class="right-div">
+				<div class="delivery-item-details">
+					<div style="width: 60%">
+						<p
+							class="order_id"
+							style="
+								font-size: 50px;
+								font-weight: 800;
+								line-height: 10px;
+							"
+						>
+							Order ID:
+						</p>
+						<p
+							class="canteen_name"
+							style="
+								font-size: 40px;
+								font-weight: 600;
+								line-height: 10px;
+							"
+						></p>
+						<p style="font-size: 26px">Items Ordered:</p>
+						<div class="list-of-items"></div>
+						<p
+							class="amount"
+							style="
+								font-size: 26px;
+								margin-left: 5px;
+								font-weight: 600;
+							"
+						></p>
+					</div>
+
+					<div style="width: 60%">
+						<div class="order-details">
+							<p style="font-size: 30px; font-weight: 600">
+								Order Status:
+							</p>
+							<div
+								style="
+									display: flex;
+									flex-direction: row;
+									justify-content: center;
+								"
+							>
+								<div id="state1" class="order-tracking">
+									<span class="is-complete"></span>
+									<p style="font-size: 24px">
+										Accepted<br />
+									</p>
+								</div>
+								<div id="state2" class="order-tracking">
+									<span class="is-complete"></span>
+									<p style="font-size: 24px">
+										Preparing<br />
+									</p>
+								</div>
+								<div id="state3" class="order-tracking">
+									<span class="is-complete"></span>
+									<p style="font-size: 24px">On The Way</p>
+								</div>
+								<div id="state4" class="order-tracking">
+									<span class="is-complete"></span>
+									<p style="font-size: 24px">
+										Delivered<br />
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="customer-details">
+							<p
+								style="font-size: 26px; font-weight: 400"
+								class="custName"
+							></p>
+							<p
+								style="font-size: 26px; font-weight: 400"
+								class="custPhone"
+							></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="../static/assets/logo.png" />
+					<p class="footer-tagline">Ordering Food Made LITE!</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="/">Home Page</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="canteens">Order Food</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="viewDeliveries">Deliver Food</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@iiiteats.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-fb.png"
+							/>
+						</a>
+						<a
+							href="https://instagram.com/iiiteats"
+							target="_blank"
+						>
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-ig.png"
+							/>
+						</a>
+						<a href="https://twitter.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-twitter.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 IIITEats. All rights reserved.</p>
+			</div>
+		</footer>
+		<script src="../static/js/order-tracking.js"></script>
+	</body>
+</html>

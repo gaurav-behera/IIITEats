@@ -1,0 +1,84 @@
+  
+  .logo img {
+    height: 100px;
+    width: 180px;
+    margin-top: 5px;
+    margin-left:-20%;
+  }
+  .site-name{
+    justify-content: center;
+    align-items: center;
+    width:1600px;
+    color: white;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 50px;
+    padding-left: 30px;
+  }
+  .site-name h1 {
+    color: white;
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0;
+  }
+.cart-navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    align-self: right;
+}
+
+  .profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+  }
+
+  .profile-info {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: -10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    padding-left: 20px;
+    width: 300px;
+    z-index: 800;
+    font-size: 26px;
+    font-family: Nunito;
+    border-radius: 40px;
+    line-height: 10px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+
+  }
+  
+  .profile:hover .profile-info {
+    display: block;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background-color: rgb(236, 234, 209);
+  }
+
+
+
+  .profile img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    z-index: 900;
+    transition: all 0.5s ease;
+    top: -30px;
+  }
+
+  .cart-navbar img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    z-index: 900;
+    transition: all 0.5s ease;
+  }
+  

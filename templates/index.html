@@ -1,0 +1,250 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<title>IIITEats</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+		<meta http-equiv="Cache-Control" content="no-cache" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+	</head>
+
+	<link rel="stylesheet" href="../static/css/index.css" />
+	<link rel="stylesheet" href="../static/css/homepagenavbar.css">
+	<link rel="stylesheet" href="../static/css/footer.css" />
+	<body>
+		<nav
+		style="
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 110px;
+			padding: 0 20px;
+			background-color: black;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		"
+	>
+	<div class="logo">
+		<a href="/" style="text-decoration: none" onclick="playLogoAnimation(event)">
+			<img src="../static/assets/logo.png" alt="Logo" />
+		</a>
+	</div>
+		<div class="site-name">HOMEPAGE</div>
+		<div class="cart-navbar">
+			<a href="cart" style="text-decoration: none">
+				<img
+					src="../static/assets/cart.svg"
+					alt="Cart"
+					style="z-index: 700; padding-right: 30px;;"
+				/>
+			</a>
+		</div>
+		<div class="profile">
+			<img src="../static/assets/user.jpg" class="user-img" alt="Profile" style=" transform: translateY(-20px)" />
+			<div class="profile-info">
+				<p style="font-size: 24px; font-weight: 600">{{user['name']}}</p>
+				<p style="font-size: 20px; font-weight: 400">{{user['phone']}}</p>
+				<hr width="300px" />
+	
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="viewOrders"
+						>View Orders</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="yourDeliveries"
+						>View Deliveries</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="logout"
+						>Logout</a
+					>
+				</p>
+			</div>
+		</div>
+	</nav>
+	
+
+		{% if noback %}
+		<script>
+			function deleteAllCookies() {
+				const cookies = document.cookie.split(";");
+
+				for (let i = 0; i < cookies.length; i++) {
+					const cookie = cookies[i];
+					const eqPos = cookie.indexOf("=");
+					const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+					document.cookie =
+						name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+				}
+			}
+		</script>
+		{% endif %} 
+
+		<div class="extraspace1"></div>
+	
+		<div class="flex-container">
+		
+			<div class="flex-box">
+				
+				<div class="image">
+					<img class="realimage" src="../static/assets/order-food.jpg" />
+					<a href="canteens">
+						<div class="overlay">
+							<div class="image_title">Order Food</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="flex-box">
+				<div class="image">
+					<img class="realimage" src="../static/assets/delivryboy.png" />
+					<a href="viewDeliveries">
+						<div class="overlay">
+							<div class="image_title">Deliver An Order</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+
+	</div>
+	
+	<div class="extraspace"></div>
+
+
+	<div class="moving-image">
+		<img src="../static/assets/bike.svg" alt="Moving Image" width="2020px" height="500px">
+	  </div>
+	
+		  <footer class="footer">
+
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="../static/assets/logo.png" />
+					<p class="footer-tagline">Ordering Food Made LITE!</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="/">Home Page</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="canteens">Order Food</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="viewDeliveries">Deliver Food</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@iiiteats.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-fb.png"
+							/>
+						</a>
+						<a
+							href="https://instagram.com/iiiteats"
+							target="_blank"
+						>
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-ig.png"
+							/>
+						</a>
+						<a href="https://twitter.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-twitter.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 IIITEats. All rights reserved.</p>
+			</div>
+		</footer>
+
+		
+
+		<script>
+			  
+			window.addEventListener('DOMContentLoaded', () => {
+				const movingImage = document.querySelector('.moving-image');
+				let position = -1920;
+				const speed = 20; // Adjust this value to control the speed of the image
+				
+	
+				function moveImage() {
+					position += speed;
+					movingImage.style.transform = `translateX(${position}px)`;
+	
+					// Reset position to the beginning once it reaches the right end of the page
+			
+					requestAnimationFrame(moveImage);
+				}
+	
+				moveImage();
+			});
+		</script>
+
+		<script src="navbar.js" ></script>
+
+	</body>
+</html>

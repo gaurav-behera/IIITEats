@@ -1,0 +1,75 @@
+	<nav
+style="
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 110px;
+	padding: 0 20px;
+	background-color: black;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+"
+>
+<div class="logo">
+<a href="/" style="text-decoration: none" onclick="playLogoAnimation(event)">
+	<img src="../static/assets/logo.png" alt="Logo" />
+</a>
+</div>
+<div class="site-name">HOMEPAGE</div>
+<div class="cart-navbar">
+	<a href="cart" style="text-decoration: none">
+		<img
+			src="../static/assets/cart.svg"
+			alt="Cart"
+			style="z-index: 700; padding-right: 30px;;"
+		/>
+	</a>
+</div>
+<div class="profile">
+	<img src="../static/assets/user.jpg" class="user-img" alt="Profile" style=" transform: translateY(-20px)" />
+	<div class="profile-info">
+		<p style="font-size: 24px; font-weight: 600">{{user['name']}}</p>
+		<p style="font-size: 20px; font-weight: 400">{{user['phone']}}</p>
+		<hr width="300px" />
+
+		<p>
+			<a
+				style="
+					font-size: 20px;
+					font-weight: 400;
+					text-decoration: none;
+				"
+				href="viewOrders"
+				>View Orders</a
+			>
+		</p>
+		<p>
+			<a
+				style="
+					font-size: 20px;
+					font-weight: 400;
+					text-decoration: none;
+				"
+				href="yourDeliveries"
+				>View Deliveries</a
+			>
+		</p>
+		<p>
+			<a
+				style="
+					font-size: 20px;
+					font-weight: 400;
+					text-decoration: none;
+				"
+				href="logout"
+				>Logout</a
+			>
+		</p>
+	</div>
+</div>
+</nav>
+

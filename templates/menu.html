@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{canteen['name']}}</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../static/css/menu.css" />
+		<link rel="stylesheet" href="../static/css/navbar.css" />
+		<link rel="stylesheet" href="../static/css/footer.css" />
+	</head>
+	<body style="background-color: beige">
+		<nav
+			style="
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 110px;
+				padding: 0 20px;
+				background-color: black;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				z-index: 999;
+			"
+		>
+			<div class="logo">
+				<a href="../" style="text-decoration: none">
+					<img src="../static/assets/logo.png" alt="Logo" />
+				</a>
+			</div>
+			<div class="site-name">MENU</div>
+			<div class="cart-navbar">
+				<a href="../cart" style="text-decoration: none">
+					<img
+						src="../static/assets/cart.svg"
+						alt="Cart"
+						style="z-index: 700; padding-right: 30px"
+					/>
+				</a>
+			</div>
+			<div class="profile">
+				<img
+					src="../static/assets/user.jpg"
+					class="user-img"
+					alt="Profile"
+					style="transform: translateY(-20px)"
+				/>
+				<div class="profile-info">
+					<p style="font-size: 24px; font-weight: 600">
+						{{user['name']}}
+					</p>
+					<p style="font-size: 20px; font-weight: 400">
+						{{user['phone']}}
+					</p>
+					<hr width="300px" />
+
+					<p>
+						<a
+							style="
+								font-size: 20px;
+								font-weight: 400;
+								text-decoration: none;
+							"
+							href="../viewOrders"
+							>View Orders</a
+						>
+					</p>
+					<p>
+						<a
+							style="
+								font-size: 20px;
+								font-weight: 400;
+								text-decoration: none;
+							"
+							href="../yourDeliveries"
+							>View Deliveries</a
+						>
+					</p>
+					<p>
+						<a
+							style="
+								font-size: 20px;
+								font-weight: 400;
+								text-decoration: none;
+							"
+							href="logout"
+							>Logout</a
+						>
+					</p>
+				</div>
+			</div>
+		</nav>
+
+		<div class="space" style="margin-top: 120px"></div>
+
+		<div class="banner" style="background-image: url('{{canteen['img']}}')">
+			<div class="banner-overlay"></div>
+
+			<p class="canteen-name" id="canteenName" cantID="{{canteen['id']}}">
+				{{canteen['name']}}
+			</p>
+		</div>
+
+		<div class="cart" hidden>{{cart}}</div>
+
+		<div style="display: flex; flex-direction: row; margin-top: 50px">
+			<div
+				style="
+					width: 450px;
+					justify-content: center;
+					padding-left: 20px;
+				"
+			>
+				<div
+					style="
+						border: solid 1px rgba(0, 0, 0, 0.5);
+						border-radius: 20px;
+						padding-top: 20px;
+						padding-bottom: 0px;
+					"
+				>
+					<div
+						style="
+							display: flex;
+							flex-direction: row;
+							padding: 30px;
+							padding-top: 0px;
+						"
+					>
+						<div
+							style="
+								transform: translateY(-30px);
+								padding-right: 20px;
+							"
+						>
+							<p class="subheading">CATEGORIES</p>
+						</div>
+					</div>
+					<!-- <div style="justify-content: left">
+						<div style="transform: translate(20px, -80px)">
+							<div class="veg-nonveg-slider">
+								<div class="slider-container">
+									<div
+										class="slider-text"
+										style="color: rgb(176, 65, 33)"
+									>
+										Non-Veg
+									</div>
+									<div class="slider">
+										<input
+											type="checkbox"
+											id="veg-nonveg"
+											class="slider-checkbox"
+										/>
+										<label
+											for="veg-nonveg"
+											class="slider-label"
+										></label>
+									</div>
+									<div
+										class="slider-text"
+										style="color: green"
+									>
+										Veg
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<div class="menu-categories">
+						{% for category in canteen['categories'] %}
+						<div class="category">
+							<input type="checkbox" id="{{category['name']}}"
+							name="category" onclick="filterItems()" {% if
+							category['name'] in filter %} checked {% endif %} />
+							<label for="appetizers">{{category['name']}}</label>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+
+			<div class="menu">
+				<p class="subheading" style="transform: translateY(18px)">
+					MENU
+				</p>
+				<div style="transform: translateY(-120px)">
+					<a href="../cart">
+						<button
+							class="go-to-cart-button"
+							style="
+								background-color: beige;
+								font-family: Nunito;
+								font-size: 26px;
+								align-items: center;
+								float: right;
+								border-radius: 10px;
+								height: 60px;
+								padding: 10px;
+							"
+						>
+							<img
+								src="../static/assets/cart-black.svg"
+								style="width: 40px; height: 40px"
+							/>
+						</button>
+					</a>
+				</div>
+
+				<div class="list-of-items" style="transform: translateY(-80px);">
+					{% for category in canteen['categories'] %} {% if
+					category['name'] in filter %}
+					<div class="category">
+						<div class="category-name" style="max-width: 800px">
+							{{category['name']}}
+						</div>
+						<hr
+							style="
+								width: 100%;
+								margin-top: 10px;
+								margin-left: 10px;
+								margin-right: 20px;
+								border: 1px solid rgba(69, 69, 69, 0.25);
+							"
+						/>
+					</div>
+
+					{% for item in category['items'] %}
+
+					<div class="item" itemid="{{item['id']}}">
+						<div
+							class="item-image"
+							style="float: left; width: 150px"
+						>
+							<img
+								src="{{item['img']}}"
+								style="border-radius: 20px"
+							/>
+						</div>
+						<div
+							class="item-details"
+							style="float: left; width: 550px"
+						>
+							<div class="item-title">{{item['name']}}</div>
+						</div>
+						<div
+							class="item-status"
+							style="float: left; width: 50px"
+						>
+							{% if item['non_veg'] %}
+							<img src="../static/assets/non-veg.png" />
+							{% else %}
+							<img src="../static/assets/veg.png" />
+							{% endif %}
+						</div>
+
+						<div
+							class="item-price"
+							style="float: left; width: 200px"
+						>
+							{{item['price']}}
+						</div>
+						<div
+							class="item-quantity"
+							style="
+								float: left;
+								width: 200px;
+								display: flex;
+								flex-direction: row;
+								align-items: center;
+							"
+						>
+							<div
+								class="quantity"
+								itemid="{{item['id']}}"
+								cantID="{{item['canteen_id']}}"
+							>
+								<div
+									class="quantity-buttons"
+									style="border: solid 1px black"
+								>
+									<button class="minus">
+										<img
+											class="minus-img"
+											src="../static/assets/delete.svg"
+											style="width: 15px; height: 30px"
+										/>
+									</button>
+									<p
+										min="1"
+										max="20"
+										id="quantity"
+										style="
+											height: 26px;
+											padding: 10px;
+											font-size: 24px;
+										"
+									>
+										1
+									</p>
+									<button class="plus">
+										<img
+											classs="plus-img"
+											src="../static/assets/plus.svg"
+											style="width: 15px; height: 30px"
+										/>
+									</button>
+								</div>
+
+								<div class="add-to-cart-div">
+									<button class="add-to-cart-button">
+										Add To Cart
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					{% endfor %} {% endif %} {% endfor %}
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="../static/assets/logo.png" />
+					<p class="footer-tagline">Ordering Food Made LITE!</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="../">Home Page</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../canteens">Order Food</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../viewDeliveries">Deliver Food</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@iiiteats.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-fb.png"
+							/>
+						</a>
+						<a
+							href="https://instagram.com/iiiteats"
+							target="_blank"
+						>
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-ig.png"
+							/>
+						</a>
+						<a href="https://twitter.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-twitter.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 IIITEats. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="../static/js/menu.js"></script>
+</html>

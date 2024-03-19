@@ -1,0 +1,119 @@
+.left-div{
+    width:25%;
+    padding: 20px;
+    /* background-color: rgb(210, 210, 210); */
+
+}
+
+.delivery-item{
+    border-radius: 20px;
+    padding: 20px;
+	border: solid 1px rgb(0, 0, 0, 0.5);
+    font-family: Nunito;
+    transition: 300ms all;
+    margin-bottom: 20px;
+    background-color: #27aa80;
+}
+
+.delivery-item:hover{
+    box-shadow: 0px 0px 15px black;
+}
+
+.right-div{
+    width:75%;
+    padding: 20px;
+}
+
+.delivery-item-details{
+    border-radius: 20px;
+    padding: 20px;
+	border: solid 1px rgb(0, 0, 0, 0.5);
+    font-family: Nunito;
+    transition: 300ms all;
+    display: flex;
+    flex-direction: row;
+}
+
+.list-of-items{
+	border: solid 1px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    padding-bottom: 0px
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+  align-items: center;
+	border-bottom: solid 1px rgb(0, 0, 0, 0.5);
+    transform: translateY(1px);
+}
+
+.customer-details{
+    border-radius: 10px;
+	border: solid 1px rgb(0, 0, 0, 0.5);
+    font-family: Nunito;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.order-status{
+    padding: 20px;
+    margin: 20px;
+    transform: translateY(-40px);
+    font-size: 26px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radio-group input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-group label {
+    margin-left: 10px;
+  }
+  
+  .radio-group label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid #100f0f;
+  }
+  
+  .radio-group input[type="radio"]:checked + label:before {
+    background-color: #27aa80;
+
+  }
+  
+#submit-btn{
+    padding: 10px;
+    font-size: 24px;
+    background-color: #27aa80;
+    border-radius: 10px;
+    border: none;
+}
+#submit-btn:hover{
+    background-color: #27aa8190;
+}
+#submit-btn:active{
+    background-color: #27aa81d0;
+}
+
+
+
+
+
+
+

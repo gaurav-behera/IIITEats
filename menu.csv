@@ -1,0 +1,451 @@
+Anjeer Shake,38,3,V,Juice
+Apple,38,3,V,Juice
+Avocado + Honey,65,3,V,Juice
+Badam Milk,38,3,V,Juice
+Banana Shake,28,3,V,Juice
+Banana Horlicks,35,3,V,Juice
+Bournvita,32,3,V,Juice
+Butterscotch,38,3,V,Juice
+Carrot Juice,45,3,V,Juice
+Chikoo (Sapota),32,3,V,Juice
+Chocolate,32,3,V,Juice
+Cold Coffee,32,3,V,Juice
+Custard Apple,50,3,V,Juice
+Fruit Salad,38,3,V,Juice
+Grapes,33,3,V,Juice
+Guava Shake,33,3,V,Juice
+Horlicks,32,3,V,Juice
+Khus,30,3,V,Juice
+Kiwi,53,3,V,Juice
+Lemon Soda - Masala,20,3,V,Juice
+Lemon Soda - Mix,20,3,V,Juice
+Lemon Soda - Salt,20,3,V,Juice
+Lemon Soda - Sweet,20,3,V,Juice
+Mango Shake,38,3,V,Juice
+Mixed Fruit Juice,38,3,V,Juice
+Mosambi,38,3,V,Juice
+Muskmelon,32,3,V,Juice
+Nimboo Pani,11,3,V,Juice
+Orange,40,3,V,Juice
+Oreo Shake,37,3,V,Juice
+Papaya,27,3,V,Juice
+Pineapple,32,3,V,Juice
+Plain Milk,20,3,V,Juice
+Pomegranate,60,3,V,Juice
+Roohafza,27,3,V,Juice
+Rose Milk,27,3,V,Juice
+Strawberry,47,3,V,Juice
+Thandai,38,3,V,Juice
+Watermelon,30,3,V,Juice
+Plain Dosa,30,2,V,Dosa
+Karam Dosa,35,2,V,Dosa
+Onion Dosa,45,2,V,Dosa
+Onion Cheese Dosa,55,2,V,Dosa
+Butter Onion Dosa,60,2,V,Dosa
+Butter Onion Cheese Dosa,70,2,V,Dosa
+Masala Dosa Dosa,45,2,V,Dosa
+Butter Masala Dosa,60,2,V,Dosa
+Butter Masala Onion Dosa,70,2,V,Dosa
+Butter Masala Onion Cheese Dosa,80,2,V,Dosa
+Paneer Dosa,45,2,V,Dosa
+Paneer Butter Dosa,60,2,V,Dosa
+Paneer Butter Cheese Dosa,70,2,V,Dosa
+Paneer Cheese Dosa,60,2,V,Dosa
+Egg Dosa (Single),50,2,N,Dosa
+Double Egg Dosa,60,2,N,Dosa
+Double Egg Dosa Cheese,70,2,N,Dosa
+Single Egg Cheese Dosa,60,2,N,Dosa
+Egg Paneer Dosa,60,2,N,Dosa
+Egg Masala Dosa,60,2,N,Dosa
+Butter Egg Dosa,60,2,N,Dosa
+Ghee Dosa,50,2,V,Dosa
+Idly,35,2,V,Dosa
+Bread Omelette,50,2,N,Omlette
+Tea (Big),20,2,V,Tea - Coffee
+Tea (Small),10,2,V,Tea - Coffee
+Boost,25,2,V,Tea - Coffee
+Horlicks,25,2,V,Tea - Coffee
+Coffee (Small),15,2,V,Tea - Coffee
+Coffee (Big),20,2,V,Tea - Coffee
+Lemon Tea,15,2,V,Tea - Coffee
+Green Tea,15,2,V,Tea - Coffee
+Black Tea,15,2,V,Tea - Coffee
+Black Coffee,15,2,V,Tea - Coffee
+Plain Maggi,30,2,V,Maggi
+Cheese Maggi,40,2,V,Maggi
+Extra Masala Maggi,40,2,V,Maggi
+Extra Masala Cheese Maggi,50,2,V,Maggi
+Veg Masala Maggi,45,2,V,Maggi
+Atta Maggi,45,2,V,Maggi
+Atta Cheese Maggi,55,2,V,Maggi
+Extra Masala Cheese Atta Maggi,65,2,V,Maggi
+Hot Garlic Maggi,35,2,V,Maggi
+Hot Garlic Cheese Maggi,45,2,V,Maggi
+Manchurian Maggi,35,2,V,Maggi
+Manchurian Cheese Maggi,45,2,V,Maggi
+Schezwan Maggi,35,2,V,Maggi
+Schezwan Cheese Maggi,45,2,V,Maggi
+Egg Maggi,50,2,N,Maggi
+Egg Cheese Maggi,60,2,N,Maggi
+Extra Masala Egg Maggi,60,2,N,Maggi
+Yippee Maggi,30,2,V,Maggi
+Ishitee Chicken Shawarma,90,4,N,Shawarma
+Indo Panner Shawarma,80,4,V,Shawarma
+Arbic Tangy Chicken Shawarma (Mini),65,4,N,Shawarma
+Veggie Barbeque Paneer Shawarama (Mini),55,4,V,Shawarma
+Double Egg Shawarma,60,4,N,Shawarma
+Veg Manchurian,70,4,V,Starters
+Gobi Manchurian,70,4,V,Starters
+Chilly Gobi,70,4,V,Starters
+Gobi 65,70,4,V,Starters
+Paneer Manchurian,120,4,V,Starters
+Paneer 65,120,4,V,Starters
+Chilly Paneer,120,4,V,Starters
+Mushroom Manchurian,100,4,V,Starters
+Chilly Mushroom,100,4,V,Starters
+Mushroom 65,100,4,V,Starters
+Baby Corn Manchurian,100,4,V,Starters
+Chilly Baby Corn,100,4,V,Starters
+Baby Corn 65,100,4,V,Starters
+French Fries,80,4,V,Starters
+Chicken Lollipop,130,4,V,Starters
+Chicken Manchurian,130,4,V,Starters
+Chicken 65,130,4,V,Starters
+Chilly Chicken,130,4,V,Starters
+Bread Omlette,50,4,N,Omlette
+Masala Omlette,30,4,N,Omlette
+Veg Fried Rice,75,4,V,Fried Rice
+Ves Garlic Fried Rice,80,4,V,Fried Rice
+Veg Schezwan Fried Rice,85,4,V,Fried Rice
+Veg Machurian Fried Rice,90,4,V,Fried Rice
+Paneer Fried Rice,100,4,V,Fried Rice
+Schezwan Paner Fried Rice,110,4,V,Fried Rice
+Mushroom Fried Rice,100,4,V,Fried Rice
+Schezwan Mushroom Fried Rice,110,4,V,Fried Rice
+Baby Corn Fried Rece,100,4,V,Fried Rice
+Schezwan Baby Corn Fried Rice,110,4,V,Fried Rice
+Veg Fried Noodles,75,4,V,Noodles
+Veg Garlic Noodles,80,4,V,Noodles
+Veg Schezwan Noodles,85,4,V,Noodles
+Veg Manchurian Noodles,90,4,V,Noodles
+Paneer Noodles,100,4,V,Noodles
+Schezwan Paneer Noodles,110,4,V,Noodles
+Mushroom Noodles,100,4,V,Noodles
+Schezwan Mushroom Noodles,110,4,V,Noodles
+Baby Corn Noodles,100,4,V,Noodles
+Schezwan Baby Corn Noodles,110,4,V,Noodles
+Egg Fried Rice,80,4,N,Fried Rice
+Egg Garlic Fried Rice,85,4,N,Fried Rice
+Schezwan Egg Fried Rice,90,4,N,Fried Rice
+Double Egg Fried Rice,90,4,N,Fried Rice
+Egg Noodles ,80,4,N,Noodles
+Egg Garlic Noodles,85,4,N,Noodles
+Schezwan Egg Noodles,90,4,N,Noodles
+Double Egg Noodles,90,4,N,Noodles
+Chicken Fried Rice,90,4,N,Fried Rice
+Double Egg Chicken Fried Rice,100,4,N,Fried Rice
+Schezwan Chicken Fried Rice,90,4,N,Fried Rice
+Chicken Garlic Fried Rice,100,4,N,Fried Rice
+Chicken Noodles,90,4,N,Noodles
+Double Egg Chicken Noodles,100,4,N,Noodles
+Schezwan Chicken Noodles,95,4,N,Noodles
+Chicken Garlic Noodles,100,4,N,Noodles
+Plain Maggi,30,4,V,Maggi
+Veg Maggi,40,4,V,Maggi
+Veg Schezwan Maggi,45,4,V,Maggi
+Corn Maggi,40,4,V,Maggi
+Panner Maggi,50,4,V,Maggi
+Cheese Maggi,50,4,V,Maggi
+Egg Maggi,50,4,N,Maggi
+Chicken Maggi,60,4,N,Maggi
+Schezwan Chicken Maggi,70,4,N,Maggi
+Schezwan Egg Maggi,60,4,N,Maggi
+Veg Sandwich,40,1,V,Sandwich
+Cheese Potato Sandwich,50,1,V,Sandwich
+Spinach Corn Sandwich,60,1,V,Sandwich
+Italian Pasta Sandwich,60,1,V,Sandwich
+Paneer Tikka Sandwich,70,1,V,Sandwich
+Chicken Keema Sandwich,70,1,N,Sandwich
+Cheese Corn Sandwich,80,1,V,Sandwich
+Masala Maggi,35,1,V,Maggi
+Cheese Maggi,45,1,V,Maggi
+Vegetable Maggi,50,1,V,Maggi
+Atta Maggi,45,1,V,Maggi
+Egg Maggi,60,1,N,Maggi
+Bread Omlette,40,1,N,Omlette
+Plain Omlette,35,1,N,Omlette
+Cheese Bread Omlette,60,1,N,Omlette
+Plain Dosa,30,1,V,Dosa
+Onion Dosa,40,1,V,Dosa
+Masala Dosa,50,1,V,Dosa
+Cheese Masala Dosa,60,1,V,Dosa
+Cheese Onion Dosa,50,1,V,Dosa
+Uttapam,40,1,V,Dosa
+Set Dosa,40,1,V,Dosa
+Karam Dosa,40,1,V,Dosa
+Ponganalu,50,1,V,Dosa
+Egg Ponganalu,60,1,N,Dosa
+Spinach Corn Dosa,60,1,V,Dosa
+Paneer Dosa,70,1,V,Dosa
+French Fries,60,1,V,Others
+Chilli Garlic Nuggets,60,1,V,Others
+Aloo TIkka,50,1,V,Others
+Chicken Nuggets,75,1,N,Others
+Pancake,70,1,V,Others
+Tea,10,1,V,Tea - Coffee
+Hot Coffee,20,1,V,Tea - Coffee
+Cappuccino,25,1,V,Tea - Coffee
+Espresso,20,1,V,Tea - Coffee
+Black Coffee,20,1,V,Tea - Coffee
+Green Tea,10,1,V,Tea - Coffee
+Lemon Tea,20,1,V,Tea - Coffee
+Horlicks,20,1,V,Tea - Coffee
+Boost,20,1,V,Tea - Coffee
+Bournvita,20,1,V,Tea - Coffee
+Iced Tea,30,1,V,Tea - Coffee
+Cold Coffee,35,1,V,Tea - Coffee
+Hazelnut Capuccino,40,1,V,Tea - Coffee
+Green Tea with Honey,15,1,V,Tea - Coffee
+Hot Badam Milk,30,1,V,Tea - Coffee
+Mango Milkshake,35,1,V,Shakes
+Brownie with Icecream,50,1,V,Icecream
+Cream Bun,20,1,V,Bun
+Jam Bun,25,1,V,Bun
+Masala Bun,30,1,V,Bun
+Chocolate Donut,35,1,V,Donut
+Mini Pizza ,50,1,V,Pizza
+Veg Pizza,100,1,V,Pizza
+Dilkush,20,1,V,Bun
+Dil Pasand,20,1,V,Bun
+Chocolava,40,1,V,Cake
+Veg Roll,35,1,V,Roll
+Paneer Roll,30,1,V,Roll
+Egg Roll,30,1,N,Roll
+Chicken Roll,40,1,N,Roll
+Aloo Samosa,15,1,V,Samosa
+Onion Samosa,35,1,V,Samosa
+Kachori,20,1,V,Kachori
+Veg Burger,60,1,V,Burger
+Chicken Burger,70,1,N,Burger
+Paneer Makhni Burger,80,1,V,Burger
+Veg Hot Dog,50,1,V,Hot Dog
+Chicken Hot Dog,60,1,N,Hot Dog
+Veg Manchurian,40,1,V,Manchurian
+Chicken Manchurian,50,1,N,Manchurian
+Paneer Pizza,130,1,V,Pizza
+Cheese Corn Pizza,120,1,V,Pizza
+Chicken Pizza,130,1,V,Pizza
+Masala Maggi,30,5,V,Maggi
+Masala Cheese Maggi,40,5,V,Maggi
+Extra Masala Maggi,35,5,V,Maggi
+Vegetable Maggi,40,5,V,Maggi
+Vegetable Cheese Maggi,50,5,V,Maggi
+Paneer Maggi,50,5,V,Maggi
+Paneer Cheese Maggi,60,5,V,Maggi
+Sweet Corn Maggi,50,5,V,Maggi
+Sweet Corn Cheese Maggi,60,5,V,Maggi
+Atta Maggi,45,5,V,Maggi
+Atta Cheese Maggi,55,5,V,Maggi
+Oats Maggi,45,5,V,Maggi
+Oats Cheese Maggi,55,5,V,Maggi
+Egg Maggi,50,5,N,Maggi
+Egg Cheese Maggi,60,5,N,Maggi
+Double Egg Maggi,60,5,N,Maggi
+Double Egg Cheese Maggi,70,5,N,Maggi
+Chicken Maggi,80,5,N,Maggi
+Chicken Cheese Magig,90,5,N,Magig
+Vegetable Fried Maggi,50,5,V,Maggi
+Sweet Corn Fried Maggi,60,5,V,Maggi
+Panner Fried Maggi,60,5,V,Maggi
+Egg Fried Maggi,65,5,N,Maggi
+Chicken Fried Maggi,65,5,N,Maggi
+Brownie,60,5,V,Brownie
+Brownie with Vannila,70,5,V,Brownie
+Brownie with Strawberry,70,5,V,Brownie
+Brownie with Chocolate,80,5,V,Brownie
+Brownie with Mango,80,5,V,Brownie
+Brownie with Butterscotch,80,5,V,Brownie
+Butterscotch Cake,550,5,V,Cake
+Pineapple Cake,550,5,V,Cake
+Black Forest Cake,600,5,V,Cake
+White Forest Cake,650,5,V,Cake
+Chocolate Cake,650,5,V,Cake
+Milk Badam Cake,700,5,V,Cake
+Chocolate Truffle Cake,700,5,V,Cake
+Fresh Fruit Fancy Cake,750,5,V,Cake
+Brownie Fancy Cake,750,5,V,Cake
+Veg Sandwich,50,5,V,Sandwich
+Veg Cheese Sandwich,60,5,V,Sandwich
+Green Chutney Sandwich,55,5,V,Sandwich
+Green Chutney Cheese Sandwich,65,5,V,Sandwich
+Paneer Sandwich,60,5,V,Sandwich
+Paneer Cheese Sandwich,70,5,V,Sandwich
+Aloo Sandwich,55,5,V,Sandwich
+Aloo Cheese Sandwich,65,5,V,Sandwich
+Veg Club Sandwich,60,5,V,Sandwich
+Veg Club Cheese Sandwich,70,5,V,Sandwich
+Palak Panner Sandwich,60,5,V,Sandwich
+Palak Panner Cheese Sandwich,70,5,V,Sandwich
+Chocolate Cheese Sandwich,80,5,V,Sandwich
+Manchurian Sandwich,65,5,V,Sandwich
+Manchurian Cheese Sandwich,75,5,V,Sandwich
+Spinach Corn Sandwich,60,5,V,Sandwich
+Spinach Corn Cheese Sandwich,70,5,V,Sandwich
+Cheese Sandwich,40,5,V,Sandwich
+Sweet Corn Sandwich,55,5,V,Sandwich
+Sweet Corn Cheese Sandwich,65,5,V,Sandwich
+Chicken Grill Sandwich,60,5,N,Sandwich
+Chicken Grill Cheese Sandwich,60,5,N,Sandwich
+Chicken Club Sandwich,70,5,N,Sandwich
+Chicken Tikka Sandwich,70,5,N,Sandwich
+Chicken Tikka Cheese Sandwich,80,5,N,Sandwich
+Butterscotch Pastry ,55,5,V,Pastry
+Pineapple Pastry ,55,5,V,Pastry
+Black Forest Pastry ,60,5,V,Pastry
+Chocolate Pastry ,65,5,V,Pastry
+Chocolate Chip Pastry,70,5,V,Pastry
+German Chocolate Pastry ,70,5,V,Pastry
+Milk Badam Pastry,70,5,V,Pastry
+Sweet Corn Plain,25,5,V,Sweet Corn
+Masala Sweet Corn,30,5,V,Sweet Corn
+Butter Sweet Corn,30,5,V,Sweet Corn
+Plain Dosa,30,5,V,Dosa
+Karam Dosa,35,5,V,Dosa
+Masala Dosa,40,5,V,Dosa
+Onion Dosa,40,5,V,Dosa
+Sweet Corn Dosa,40,5,V,Dosa
+Egg Dosa,40,5,N,Dosa
+Paneer Dosa,50,5,V,Dosa
+Veg Roll,45,6,V,Rolls
+Paneer Roll,60,6,V,Rolls
+Schezwan Veg Roll,55,6,V,Rolls
+Cheese Veg Roll,55,6,V,Rolls
+Chicken Roll,65,6,N,Rolls
+Schezwan Chicken Roll,70,6,N,Rolls
+Egg Roll,55,6,N,Rolls
+Double Egg Roll,65,6,N,Rolls
+Chicken Egg Roll,75,6,N,Rolls
+Chicken Double Egg Roll,85,6,N,Rolls
+Mosambi Juice,40,1,V,Juices
+Muskmelon Juice,35,1,V,Juices
+Grape Juice,35,1,V,Juices
+Orange Juice,40,1,V,Juices
+Pineapple Juice,35,1,V,Juices
+Watermelon Juice,30,1,V,Juices
+Banana Juice,30,1,V,Juices
+Papaya Juice,30,1,V,Juices
+Apple Juice,40,1,V,Juices
+Pomegranate Juice,60,1,V,Juices
+Sapota Juice,35,1,V,Juices
+Mango Juice,40,1,V,Juices
+Kiwi Juice,50,1,V,Juices
+Roohafza,30,1,V,Juices
+Khash,30,1,V,Juices
+Nimboo Pani,15,1,V,Juices
+Avocado Juice,65,1,V,Juices
+Anjeer Juice,40,1,V,Juices
+Lemon Soda,20,1,V,Juices
+Beetroot Juice,45,1,V,Juices
+Carrot Juice,45,1,V,Juices
+Mix Fruit Juice,40,1,V,Juices
+ABC Juice,45,1,V,Juices
+Strawberry Juice,45,1,V,Juices
+Mojito Drink Soda,40,1,V,Drinks
+Nanari Soda,30,1,V,Drinks
+Apple Shake,40,1,V,Shakes
+Banana Shake,30,1,V,Shakes
+Sapota Shake,35,1,V,Shakes
+Mango Shake,40,1,V,Shakes
+Avocado Shake,65,1,V,Shakes
+Anjeer Shake,40,1,V,Shakes
+Carrot Shake,45,1,V,Shakes
+Kiwi Shake,55,1,V,Shakes
+Custard Apple Shake,50,1,V,Shakes
+Strawberry Shake,45,1,V,Shakes
+Papaya Shake,30,1,V,Shakes
+Musk Melon Shake,35,1,V,Shakes
+Dragon Shake Shake,70,1,V,Shakes
+Guava Shake,35,1,V,Shakes
+Pomogranate Shake,60,1,V,Shakes
+Oreo Shake,40,1,V,Shakes
+Cold Coffee,35,1,V,Shakes
+Caramel Shake,35,1,V,Shakes
+Chocolate Shake,35,1,V,Shakes
+Vanila Milk Shake,50,1,V,Shakes
+Roohafza,30,1,V,Drinks
+Khash,30,1,V,Drinks
+Badam Milk,35,1,V,Milk
+Bourbon Shake,35,1,V,Shakes
+Horlicks,30,1,V,Milk
+Boost,30,1,V,Milk
+Bournvita,30,1,V,Milk
+Choco Brownie Crumble Shake,60,1,V,Shakes
+Pista Shake,45,1,V,Shakes
+Rose Shake,30,1,V,Shakes
+Thandai,40,1,V,Drinks
+Horlicks + Banana Shake,35,1,V,Shakes
+Horlicks + Chickoo Shake,40,1,V,Shakes
+Horlicks + Apple Shake,40,1,V,Shakes
+Horlicks + Muskmelon Shake,40,1,V,Shakes
+Horlicks + Papaya Shake,35,1,V,Shakes
+Horlicks + Caramel Shake,35,1,V,Shakes
+Banana + Boost Shake,35,1,V,Shakes
+Apple + Boost Shake,40,1,V,Shakes
+Chickoo + Boost Shake,40,1,V,Shakes
+Muskmelon + Boost Shake,40,1,V,Shakes
+Papaya + Boost Shake,35,1,V,Shakes
+Bournvita + Banana Shake,35,1,V,Shakes
+Bournvita + Chickoo Shake,40,1,V,Shakes
+Bournvita + Muskmelon Shake,40,1,V,Shakes
+Bournvita + Apple Shake,40,1,V,Shakes
+Oreo + Coffee Shake,40,1,V,Shakes
+Oreo + Butterscotch Shake,40,1,V,Shakes
+Oreo + Caramel Shake,40,1,V,Shakes
+Oreo + Apple Shake,40,1,V,Shakes
+Oreo + Strawberry Shake,45,1,V,Shakes
+Oreo + Anjeer Shake,55,1,V,Shakes
+Oreo + Ice Cream Shake,60,1,V,Shakes
+Coffee + Ice Cream Shake,60,1,V,Shakes
+Chocolate + Ice Cream Shake,60,1,V,Shakes
+Butterscotch + Ice Cream Shake,60,1,V,Shakes
+Caramel + Ice Cream Shake,60,1,V,Shakes
+Apple + Ice Cream Shake,60,1,V,Shakes
+Chickoo + Ice Cream Shake,60,1,V,Shakes
+Banana + Ice Cream Shake,60,1,V,Shakes
+Avocado + Ice Cream Shake,100,1,V,Shakes
+Mango + Ice Cream Shake,60,1,V,Shakes
+Strawberry + Ice Cream Shake,70,1,V,Shakes
+Muskmelon + Ice Cream,55,1,V,Shakes
+Dry Fruit Milk Shake,110,1,V,Shakes
+Oreo + Chocolate Shake,40,1,V,Shakes
+Mosambi + Pineapple Shake,40,1,V,Shakes
+Orange + Pineapple Shake,40,1,V,Shakes
+Pineapple + Grapes Shake,40,1,V,Shakes
+Chickoo + Papaya Shake,50,1,V,Shakes
+Banana + Kiwi Shake,40,1,V,Shakes
+Watermelon + Anar Shake,40,1,V,Shakes
+Apple + Banana Shake,40,1,V,Shakes
+Carrot + Beetroot Shake,45,1,V,Shakes
+Carrot + Anar Shake,45,1,V,Shakes
+Carrot + Pineapple Shake,45,1,V,Shakes
+Carrot + Watermelon Shake,45,1,V,Shakes
+Carrot + Apple Shake,45,1,V,Shakes
+Carrot + Mosambi Shake,45,1,V,Shakes
+Carrot + Orange Shake,45,1,V,Shakes
+Graped + Anar,45,1,V,Drinks
+Water + Lemon,35,1,V,Drinks
+Muskmelon,35,1,V,Salads
+Pineapple,40,1,V,Salads
+Watermelon,35,1,V,Salads
+Banana,35,1,V,Salads
+Papaya,35,1,V,Salads
+Apple,45,1,V,Salads
+Sapota,45,1,V,Salads
+Mango,50,1,V,Salads
+Mix Fruit Salad,40,1,V,Salads
+Ince Cream Fruit Salad,60,1,V,Salads
+Custard Fruit Salad,60,1,V,Salads
+Cream Fruit Salad,50,1,V,Salads
+Chatpata Salad,45,1,V,Salads
+Chocolate Salad,60,1,V,Salads
+Dry Fruit Salad,65,1,V,Salads

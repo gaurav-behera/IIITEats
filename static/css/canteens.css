@@ -1,0 +1,76 @@
+.canteen-name {
+	margin: 0;
+	max-width: 600px;
+	font-family: Nunito;
+	font-size: 45px;
+	color: white;
+}
+.canteen-card {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 1px #00000045;
+	background: black no-repeat right top;
+	background-size: auto 550px;
+	color: white;
+	overflow: hidden;
+	margin: 40px;
+	margin-bottom: 10px;
+	padding-right: 20px;
+	box-shadow: 0px 0px 20px black;
+}
+
+.canteen-card-content {
+	background: black;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-right: 30px;
+	word-wrap: break-word;
+   	width: 470px;
+	opacity: 0.75;
+	transition: 0.5s ease all;
+	transform: translateY(-30px);
+	/* width: 510px; */
+}
+.order-text {
+	text-decoration: underline;
+	cursor: pointer;
+	width: 130px;
+}
+.canteen-description {
+	pointer-events: none;
+}
+.canteen-details {
+	max-height: 0;
+	transition: 0.5s ease-out all;
+	overflow: hidden;
+	color: #ffffffdb;
+	font-family: "Nunito";
+	font-size: 24px;
+	border: none;
+	padding: 0.5px;
+	transform: translateY(-20px);
+}
+.canteens-container {
+	display: grid;
+	padding-left: 100px;
+	padding-right: 100px;
+	grid-template-columns: 1fr 1fr 1fr;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.canteen-card:hover .canteen-details,
+.canteen-card-content {
+	max-height: 500px;
+}
+
+.canteen-card {
+	transform: scale(0.9);
+	transition: 0.5s all ease;
+}
+.canteen-card:hover {
+	transform: scale(1);
+	background-size: auto 550px;
+}

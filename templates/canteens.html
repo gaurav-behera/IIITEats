@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Canteens</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../static/css/canteens.css" />
+		<link rel="stylesheet" href="../static/css/navbar.css" />
+		<link rel="stylesheet" href="../static/css/footer.css" />
+	</head>
+	<body style="background-color: beige">
+		<nav
+		style="
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 110px;
+			padding: 0 20px;
+			background-color: black;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		"
+	>
+	<div class="logo">
+		<a href="/" style="text-decoration: none" onclick="playLogoAnimation(event)">
+			<img src="../static/assets/logo.png" alt="Logo" />
+		</a>
+	</div>
+		<div class="site-name">CANTEENS</div>
+		<div class="cart-navbar">
+			<a href="cart" style="text-decoration: none">
+				<img
+					src="../static/assets/cart.svg"
+					alt="Cart"
+					style="z-index: 700; padding-right: 30px;;"
+				/>
+			</a>
+		</div>
+		<div class="profile">
+			<img src="../static/assets/user.jpg" class="user-img" alt="Profile" style=" transform: translateY(-20px)" />
+			<div class="profile-info">
+				<p style="font-size: 24px; font-weight: 600">{{user['name']}}</p>
+				<p style="font-size: 20px; font-weight: 400">{{user['phone']}}</p>
+				<hr width="300px" />
+	
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="viewOrders"
+						>View Orders</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="yourDeliveries"
+						>View Deliveries</a
+					>
+				</p>
+				<p>
+					<a
+						style="
+							font-size: 20px;
+							font-weight: 400;
+							text-decoration: none;
+						"
+						href="logout"
+						>Logout</a
+					>
+				</p>
+			</div>
+		</div>
+	</nav>
+	
+
+		<div class="space" style="margin-top: 150px"></div>
+
+		<div class="canteens-container" style="transform: translateY(-60px)">
+			{% for canteen in canteens[:6] %}
+			<div
+				class="canteen-card"
+				style="background-image: url('{{canteen['img']}}')"
+				onclick="openCanteen({{canteen['id']}})"
+			>
+				<div class="canteen-card-content">
+					<div class="canteen-name">
+						{%if "BBC" in canteen['name']%}
+						<p>Basket Ball Canteen</p>
+						{% else %}
+						<p>{{canteen['name']}}</p>
+						{% endif %}
+					</div>
+					<div class="canteen-details">
+						<hr
+							style="
+								background: #ffffffc5;
+								border: none;
+								padding: 0.5px;
+							"
+						/>
+						<div class="canteen-description">
+							{{canteen['desc']}}
+						</div>
+						<div style="height: 0px"></div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<footer class="footer">
+
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="../static/assets/logo.png" />
+					<p class="footer-tagline">Ordering Food Made LITE!</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="/">Home Page</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="canteens">Order Food</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="viewDeliveries">Deliver Food</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@iiiteats.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-fb.png"
+							/>
+						</a>
+						<a
+							href="https://instagram.com/iiiteats"
+							target="_blank"
+						>
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-ig.png"
+							/>
+						</a>
+						<a href="https://twitter.com/iiiteats" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../static/assets/social-twitter.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 IIITEats. All rights reserved.</p>
+			</div>
+		</footer>
+		<script>
+			function openCanteen(id) {
+				window.location.href = "/canteen/" + id;
+			}
+		</script>
+	</body>
+</html>

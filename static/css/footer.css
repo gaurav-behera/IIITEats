@@ -1,0 +1,111 @@
+.footer p {
+	color: rgb(0, 0, 0);
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	padding-bottom: 20px;
+    background-color: rgb(223, 223, 223);
+    font-family: Nunito;
+}
+
+.footer-main {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: fit-content;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.footer-section1 {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.footer-logo {
+	width: 250px;
+	max-width: 500;
+}
+
+.footer-tagline {
+	font-family: Nunito;
+	font-weight: 500;
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+	align-self: flex-start;
+}
+
+.footer-section-mid-item {
+	font-family: Nunito;
+	font-weight: 500;
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+	align-self: flex-start;
+}
+
+.footer-section4 {
+	align-items: flex-start;
+}
+
+.footer-section4-text {
+	align-self: flex-start;
+	margin-left: 10px;
+}
+
+.footer-section4-title {
+	font-family: Nunito;
+	font-size: 24px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer-section4-contact {
+	font-family: monospace;
+	font-size: 20px;
+	margin-top: 5px;
+	font-weight: 500;
+}
+
+.footer-socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-socials-item {
+	width: 30px;
+	height: 30px;
+	margin: 10px;
+}
+
+.footer-socials-item a,
+.footer-section4-contact a,
+.footer-section a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.footer-copyright p {
+	font-family: Nunito;
+	font-size: 22px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
